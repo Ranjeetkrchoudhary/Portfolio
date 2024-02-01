@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Record Form</title>
+        <style>
+       input{
+            width: 260px;
+            height: 30px;
+            padding: 4px 8px;
+            margin: 20px 10px;
+            align-items:center;
+        }
+         h1{
+            text-align: center;
+             
+        }
+        .logIn{
+            align-items: center;
+            align-content: center;
+            background-color: #00000051;
+            width: 340px;
+            height: 400px;
+            padding: 30px 20px ;
+        }
+        .main{
+            margin-top: 100px;
+        }
+        .loginBtn{
+                width: 100px;
+                height: 24px;
+                background-color: #000000;
+                padding: 6px 10px;
+                border-radius: 4px;
+                margin-top: 20px;
+               
+            }
+        .loginBtn a{
+                font-size: 20px;
+                text-decoration: none;
+                text-decoration-line: none;
+                color: #ffffff;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+    </style>
+    </head>
+    <body>
+        <center>
+            <div class="main">
+                <div class="logIn" id="loginForm">
+                    <h1>Login</h1>
+                    <div>
+                        <label for="username">Enter
+                            Username</label>
+                        <input type="text" id="username" name="username"
+                            required>
+                    </div>
+                    <div>
+                        <label for="username">Enter Password</label>
+                        <input type="password" id="password" name="password"
+                            required>
+                    </div>
+
+                    <div class="loginBtn">
+                        <a href="#" onclick="login()">Login</a>
+                    </div>
+                </div>
+            </center>
+
+        </body>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+        <script>
+            function login() {
+                // Simulated login (replace this with actual authentication logic on the server)
+                var username = $("#username").val();
+                var password = $("#password").val();
+
+                // For simplicity, let's use a hardcoded username and password
+                if (username === "admin" && password === "123") {
+                    alert("Login Successfull...! Continue Now");
+                    redirectToAdmin();
+                } else {
+                    alert("Invalid username or password");
+                }
+            }
+
+            function redirectToAdmin() {
+                // Simulated redirect to admin dashboard (replace this with an actual redirect mechanism)
+                window.location.href = "index.html";
+            }
+    </script>
+    </html>
