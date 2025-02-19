@@ -267,12 +267,12 @@ li a:hover {
     padding: 1rem;
     display: inline;
     border-radius: 8px;
-    border: 2px solid rgb(6, 182, 212);
+    border: 8px solid rgb(6, 182, 212);
     outline: none;
     animation: leftSideAni 1s ease forwards;
 }
 
-.btn {
+button .btn {
     border: none;
     outline: none;
     background-color: rgb(6, 182, 212);
@@ -292,7 +292,7 @@ li a:hover {
 /* Footer Styles */
 .dark-mode footer {
     z-index: 1;
-    box-shadow: 0 4px 17px rgb(6, 182, 212);
+    box-shadow: 0 17px 17px rgb(6, 182, 212);
 }
 
 .social-footer {
