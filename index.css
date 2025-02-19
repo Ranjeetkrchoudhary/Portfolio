@@ -266,8 +266,8 @@ li a:hover {
     font-weight: var(--font-semi);
     padding: 1rem;
     display: inline;
-    border-radius: 0.5rem;
-    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    border: 2px solid rgb(6, 182, 212);
     outline: none;
     animation: leftSideAni 1s ease forwards;
 }
@@ -275,7 +275,7 @@ li a:hover {
 .btn {
     border: none;
     outline: none;
-    background-color: var(--primary-color);
+    background-color: rgb(6, 182, 212);
     cursor: pointer;
     border-radius: 4px;
     animation: leftSideAni 1s ease forwards;
