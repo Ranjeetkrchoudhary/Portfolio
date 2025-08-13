@@ -5,8 +5,6 @@
     --primary-color: rgb(6, 182, 212);
     --primary-dark: black;
 }
-
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +17,6 @@ body {
     color: #000;
 }
 
-/* Header Styles */
 header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
@@ -187,21 +184,12 @@ li a:hover {
     color: var(--primary-color);
 }
 
-/* .dark-mode .images {
-    background: linear-gradient(145deg, #1f252e, #2e3239);
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #1b1f27;
-    border-top: 2px solid var(--primary-color);
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    overflow: hidden;
-} */
 
 .dark-mode header {
     box-shadow: 0 4px 17px rgb(6, 182, 212);
     background: var(--primary-dark);
 }
 
-/* Description Styles */
 .desc {
     color: #fff;
     font-size: 2.5rem;
@@ -214,7 +202,6 @@ li a:hover {
     color: var(--primary-color);
 }
 
-/* Image Styles */
 .images {
     border-radius: 20px;
     opacity: 0;
@@ -224,14 +211,11 @@ li a:hover {
     object-fit: cover;
     display: grid;
     border-bottom: 4px solid var(--primary-color);
-    height: auto;
     width: 50%;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-
-/* Card Styles */
 
 .card-body {
     justify-content: center;
@@ -245,8 +229,6 @@ li a:hover {
     object-fit: cover;
     overflow: hidden;
     width: 60%;
-    /* align-items: center;
-    justify-content: center;  */
     border: 1px solid #101316;
     padding: 4px;
 }
@@ -256,7 +238,6 @@ li a:hover {
     border-radius: 10px;
 }
 
-/* Contact Styles */
 .contact {
     margin-bottom: 20px;
 }
@@ -266,16 +247,16 @@ li a:hover {
     font-weight: var(--font-semi);
     padding: 1rem;
     display: inline;
-    border-radius: 8px;
-    border: 8px solid rgb(6, 182, 212);
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-color);
     outline: none;
     animation: leftSideAni 1s ease forwards;
 }
 
-button .btn {
+.btn {
     border: none;
     outline: none;
-    background-color: rgb(6, 182, 212);
+    background-color: var(--primary-color);
     cursor: pointer;
     border-radius: 4px;
     animation: leftSideAni 1s ease forwards;
@@ -289,10 +270,9 @@ button .btn {
     height: 300px;
 }
 
-/* Footer Styles */
 .dark-mode footer {
     z-index: 1;
-    box-shadow: 0 17px 17px rgb(6, 182, 212);
+    box-shadow: 0 4px 17px rgb(6, 182, 212);
 }
 
 .social-footer {
@@ -324,7 +304,6 @@ button .btn {
     transition: all .3s ease-in-out;
 }
 
-/* Keyframes */
 @keyframes leftSideAni {
     0% {
         transform: translateX(-100px);
@@ -397,7 +376,6 @@ button .btn {
     }
 }
 
-/* Media Queries */
 @media screen and (max-width: 1024px) {
     .container-fluid {
         padding: 0 4.4rem;
@@ -429,6 +407,7 @@ button .btn {
             left: -100%;
             z-index: 111111;
         }
+
 
         .menu {
             display: block;
